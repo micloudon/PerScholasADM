@@ -1,0 +1,16 @@
+.title_container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.title_container h3 {
+    padding-top: 10px;
+    flex: 7;
+}
+
+.title_container h1 {
+    flex: 1;
+}

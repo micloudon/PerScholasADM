@@ -1,0 +1,36 @@
+body {
+    font-family: 'Courier New', monospace;
+  }
+
+.card {
+  margin: 35px;
+  width: 90%;
+}
+
+.card-link {
+  font-size: 20px;
+  background: black;
+  padding: 5px;
+  border-radius: 8%;
+  color: #829fff;
+}
+
+.github-link {
+  color: #eca6ff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+  background: black;
+  padding: 5px;
+  border-radius: 8%;
+}
+
+.github-link:hover {
+  color: purple;
+  text-decoration: none;
+}
+
+li {
+  /* list-style-type: none; */
+  margin-bottom: 6px;
+}

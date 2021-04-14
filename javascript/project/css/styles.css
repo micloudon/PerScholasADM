@@ -1,0 +1,151 @@
+body {
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Courier New', monospace;
+    background-image: url('stock-market-data.jpg');
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 150%;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+ 
+.stockh1 {
+    font-size: 300%;
+    padding: 10px;
+    background: #8cd468;
+    color: black;
+    border: solid 1px white;
+}
+
+.cryptoh1 {
+    font-size: 300%;
+    padding: 10px;
+    background: #58e0f5;
+    color: black;
+    border: solid 1px white;
+}
+
+.abouth1 {
+    font-size: 300%;
+    padding: 10px;
+    background: #eb5252;
+    color: black;
+    border: solid 1px white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 50%;
+    background: #333;
+    color: black;
+    padding: 20px;
+    border: solid 1px white;
+}
+
+@media (max-width:480px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+        width: 80%;
+        background: #333;
+        color: black;
+        padding: 20px;
+        border: solid 1px white;
+    }   
+}
+
+p {
+    background: #eb5252;
+    font-size: 130%;
+    padding: 10px;
+}
+
+label {
+    margin: 5px;
+    font-size: 125%;
+    padding: 4px;
+    color: white;
+}
+
+.stock {
+    padding: 8px;
+    font-size: 130%;
+    background: #8cd468;
+    
+} 
+
+.crypto {
+    padding: 8px;
+    font-size: 130%;
+    background: #58e0f5;
+}
+
+.crypto:hover {
+    background-color: #a3f3ff;
+}
+
+.stock:hover {
+    background-color: #c7fcbd;
+}
+
+.stockbtn{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 130%;
+    background: #8cd468;
+    /* color: white; */
+}
+
+.cryptobtn{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 130%;
+    background: #58e0f5;
+    /* color: white; */
+}
+
+.stockbtn:hover {
+    background-color: #c7fcbd;
+    cursor: pointer;
+} 
+
+.cryptobtn:hover {
+    background-color: #a3f3ff;
+    cursor: pointer;
+} 
+
+
+.results {
+    color: white;
+}
+
+/* table {
+    border: solid 1px white;
+} */
+

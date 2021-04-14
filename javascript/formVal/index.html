@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="form-container">
+            <h1>Awesome Form</h1>
+            <form class="form" method="post" action="re" id="form">
+                <div class="field-container">
+                    <img src="" alt="">
+                    <input type="text" name="" id="username" placeholder="username" pattern="^[a-zA-Z0-9_.-]*$[a-zA-Z_.-]*$"
+                    required/>
+                </div>
+
+                <div class="field-container">
+                    <img src="" alt="">
+                    <input type="date" name="" id="date" value="1993-07-22"
+                    min="1800-01-01" max="2002-12-31"
+                    placeholder="Date of Birth"
+                    required/>
+                </div>
+
+                <div class="button-container">
+                    <input type="submit" value="submit"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="feedback"></div>
+    <script src="app.js"></script>
+</body>
+</html>

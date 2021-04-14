@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali');
+
+h1, a {
+    /* add font-family here */
+}
+.img-container{
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    border: none;
+}
+
+img-container img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid lightblue;
+    border-radius: 10px 10px 200px 10px;
+    box-shadow: 10px 15px 10px;
+}

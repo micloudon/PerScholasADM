@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/stock-market-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Cypto Ticker</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html"> <strong>Stock</strong> </a>
+        <a href="cypto.html"> <strong>Cypto</strong> </a>
+        <a href="about.html"> <strong>About</strong> </a>
+      </div>
+
+    <div class="container">
+
+        <h1 class="cryptoh1">Cypto Ticker</h1>
+        <label> <strong>Pick a Cypto</strong> </label>
+        <select name="crypto" class="crypto" id="crypto">
+            <option value="BTC">Bitcoin</option>
+            <option value="ETH">Ethereum</option>
+            <option value="BTH">Bitcoin Cash</option>
+            <option value="ADA">Cardano</option>
+            <option value="LTC">Litecoin</option>
+            <option value="XLM">Stellar</option>
+            <option value="EOS">EOS</option>
+            <option value="NEO">NEO</option>
+            <option value="IOTA">MIOTA</option>
+            <option value="DASH">Dash</option>
+            <option value="XMR">Monero</option>
+            <option value="TRX">TRON</option>
+            <option value="XTZ">Tezos</option>
+            <option value="DOGE">Dogecoin</option>
+            <option value="ETC">Ethereum Classic</option>
+            <option value="VEN">VeChain</option>
+            <option value="USDT">Tether</option>
+            <option value="BNB">Binance Coin</option>
+          </select>
+        <label> <strong>Pick a Currency</strong> </label>
+        <select name="currencies" class="crypto" id="currencies">
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">English Pound</option>
+            <option value="JPY">Japanese Yen</option>
+            <option value="AUD">Australian Dollar</option>
+          </select>
+        <label> <strong>Pick a Date</strong> </label>
+        <input type="date" class="crypto" name="date" id="date1" value="2021-01-05">
+        <button id="submit" class="cryptobtn" type="submit" onclick="response1()"> <strong>Submit</strong> </button>
+
+            <table class="results">
+                <tr id="resultSymbol1"></tr>
+                <tr id="resultDay1"></tr>
+                <tr id="resultOpen1"></tr>
+                <tr id="resultClose1"></tr>
+            </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

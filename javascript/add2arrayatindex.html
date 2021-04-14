@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = [];
+        
+        for (i=0; i<10; i++){
+        arr.push(1);
+        }
+        
+        console.log(arr);
+        let index;
+        let value;
+        
+        do {
+        index = parseInt(prompt("Cell index"));
+        value = parseInt(prompt("value"));
+        
+        if(0<= index && index < 10){
+        arr[index] = value;
+        console.log(arr);
+        }
+        } while (0<= index && index < 10)
+        </script> 
+</head>
+<body>
+    
+</body>
+</html>

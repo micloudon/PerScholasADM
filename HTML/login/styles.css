@@ -1,0 +1,22 @@
+body {
+    background-color: #d3eb5b;
+}
+
+.center {
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    width: 20%;
+    /* border: 3px solid; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+.center h1, input, button {
+    /* display: flex;
+    flex: center; */
+    width: 100%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/stock-market-icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Stock Ticker</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html"> <strong>Stock</strong> </a>
+        <a href="cypto.html"> <strong>Cypto</strong> </a>
+        <a href="about.html"> <strong>About</strong> </a>
+      </div>
+
+    <div class="container">
+
+        <h1 class="stockh1">Stock Ticker</h1>
+        <label> <strong>Enter a Symbol</strong> </label>
+        <input type="text" class="stock" name="input" id="input" value="GOOGL">
+        <label> <strong>Pick a Date</strong> </label>
+        <input type="date" class="stock" name="date" id="date" value="2021-01-05">
+        <button id="submit" class="stockbtn" type="submit" onclick="response()"> <strong>Submit</strong> </button>
+
+            <table class="results">
+                <tr id="resultSymbol"></tr>
+                <tr id="resultFrom"></tr>
+                <tr id="resultOpen"></tr>
+                <tr id="resultClose"></tr>
+                <tr id="resultHigh"></tr>
+                <tr id="resultLow"></tr>
+            </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
