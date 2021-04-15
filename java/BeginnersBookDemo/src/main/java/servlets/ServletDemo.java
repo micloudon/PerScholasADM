@@ -1,6 +1,8 @@
 package servlets;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,7 +18,6 @@ public class ServletDemo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	private String msg;
-	private int count = 0;
 
 	public ServletDemo() {
 		super();
@@ -27,7 +28,6 @@ public class ServletDemo extends HttpServlet {
 	 * @see Servlet#init(ServletConfig)
 	 */
 	public void init(ServletConfig config) throws ServletException {
-		count++;
 		msg = "hello world";
 	}
 
@@ -38,10 +38,33 @@ public class ServletDemo extends HttpServlet {
 		// TODO Auto-generated method stub
 	}
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+		String u = "michael";
+		String p = "password";
+
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		
+		request.setAttribute("username", username);
+		request.setAttribute("password", password);
+		
+		if(u.equals(username) && p.equals(password)) {
+			response.setContentType("text/html");
+			
+			RequestDispatcher rd = request.getRequestDispatcher("/success.jsp");
+			rd.forward(request, response);
+		}
+		
+		else {
+			
+			RequestDispatcher rd = request.getRequestDispatcher("/fail.jsp");
+			rd.forward(request, response);
+		}
+	}
+	
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
