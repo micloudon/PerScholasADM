@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="SMS">
+	
+	<class>jpa.entities.CourseEntity</class>
+	<class>jpa.entities.StudentEntity</class>
+	<class>jpa.entitymodels.Student</class>
+	<class>jpa.entitymodels.Course</class>
+	
+	<properties>  
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/sbajpa"/>
+			<property name="javax.persistence.jdbc.user" value="newuser"/>
+			<property name="javax.persistence.jdbc.password" value="password"/>
+			<property name="eclipselink.logging.level" value="FINE"/>
+         	<property name="eclipselink.ddl-generation" value="create-tables"/>
+		</properties>
+	</persistence-unit>
+</persistence>
